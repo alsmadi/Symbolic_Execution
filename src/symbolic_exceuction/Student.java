@@ -20,17 +20,29 @@ public class Student implements Comparable<Student>{
  }
  public int displayLastMsg(int nToPrint, int msgCounter, int lastMsg, ArrayList messageBuffer, int SIZE  ) { //A
  int np = 0; //A
+ System.out.println("A");
  if ((msgCounter > 0) && (nToPrint > 0)) { //A
+ System.out.println("B");
  for (int j = lastMsg; (( j != 0) && (np < nToPrint)); --j) { //B
+ System.out.println("C");
  System.out.println(messageBuffer.get(j)); //C
+ System.out.println("D");
  ++np; //D
+ System.out.println("E");
  } //E
+ System.out.println("F");
  if (np < nToPrint) { //F
+ System.out.println("G");
  for (int j = SIZE; ((j != 0) && (np < nToPrint)); --j) { //G
+ System.out.println("H");
  System.out.println(messageBuffer.get(j)); //H
+ System.out.println("I");
  ++np; //I
+ System.out.println("J");
  } //J
+ System.out.println("K");
  } //K
+ System.out.println("L");
  } //L
  return np;
 }

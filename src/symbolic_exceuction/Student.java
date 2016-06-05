@@ -21,29 +21,54 @@ public class Student implements Comparable<Student>{
  public int displayLastMsg(int nToPrint, int msgCounter, int lastMsg, ArrayList messageBuffer, int SIZE  ) { //A
  int np = 0; //A
  System.out.println("A");
+ System.out.println("Values of inputs respectively");
+ System.out.println(nToPrint+".."+msgCounter+".."+lastMsg+".."+messageBuffer.size()+".."+SIZE);
  if ((msgCounter > 0) && (nToPrint > 0)) { //A
- System.out.println("B");
+ //System.out.println("B");
  for (int j = lastMsg; (( j != 0) && (np < nToPrint)); --j) { //B
- System.out.println("C");
+ System.out.println("B");
+ System.out.println("Values of inputs respectively");
+ System.out.println(nToPrint+".."+msgCounter+".."+lastMsg+".."+messageBuffer.size()+".."+SIZE);
  System.out.println(messageBuffer.get(j)); //C
- System.out.println("D");
+ System.out.println("C");
+ System.out.println("Values of inputs respectively");
+ System.out.println(nToPrint+".."+msgCounter+".."+lastMsg+".."+messageBuffer.size()+".."+SIZE);
  ++np; //D
- System.out.println("E");
+ System.out.println("D");
+ System.out.println("Values of inputs respectively");
+ System.out.println(nToPrint+".."+msgCounter+".."+lastMsg+".."+messageBuffer.size()+".."+SIZE);
  } //E
- System.out.println("F");
+ System.out.println("E");
+ System.out.println("Values of inputs respectively");
+ System.out.println(nToPrint+".."+msgCounter+".."+lastMsg+".."+messageBuffer.size()+".."+SIZE);
  if (np < nToPrint) { //F
- System.out.println("G");
+ System.out.println("F");
+ System.out.println("Values of inputs respectively");
+ System.out.println(nToPrint+".."+msgCounter+".."+lastMsg+".."+messageBuffer.size()+".."+SIZE);
  for (int j = SIZE; ((j != 0) && (np < nToPrint)); --j) { //G
- System.out.println("H");
+ System.out.println("G");
+ System.out.println("Values of inputs respectively");
+ System.out.println(nToPrint+".."+msgCounter+".."+lastMsg+".."+messageBuffer.size()+".."+SIZE);
  System.out.println(messageBuffer.get(j)); //H
- System.out.println("I");
+ System.out.println("H");
+ System.out.println("Values of inputs respectively");
+ System.out.println(nToPrint+".."+msgCounter+".."+lastMsg+".."+messageBuffer.size()+".."+SIZE);
  ++np; //I
- System.out.println("J");
+ System.out.println("I");
+ System.out.println("Values of inputs respectively");
+ System.out.println(nToPrint+".."+msgCounter+".."+lastMsg+".."+messageBuffer.size()+".."+SIZE);
  } //J
- System.out.println("K");
+ System.out.println("J");
+ System.out.println("Values of inputs respectively");
+ System.out.println(nToPrint+".."+msgCounter+".."+lastMsg+".."+messageBuffer.size()+".."+SIZE);
  } //K
- System.out.println("L");
+ System.out.println("K");
+ System.out.println("Values of inputs respectively");
+ System.out.println(nToPrint+".."+msgCounter+".."+lastMsg+".."+messageBuffer.size()+".."+SIZE);
  } //L
+  System.out.println("L");
+  System.out.println("Values of inputs respectively");
+ System.out.println(nToPrint+".."+msgCounter+".."+lastMsg+".."+messageBuffer.size()+".."+SIZE);
  return np;
 }
  public Student(){

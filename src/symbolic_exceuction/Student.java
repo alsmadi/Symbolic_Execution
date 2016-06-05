@@ -5,6 +5,7 @@
  */
 package symbolic_exceuction;
 
+import java.util.*;
 /**
  *
  * @author IAlsmadi
@@ -17,6 +18,22 @@ public class Student implements Comparable<Student>{
  public int Compute(int x) {
  return Math.abs(10 / (x + x));
  }
+ public int displayLastMsg(int nToPrint, int msgCounter, int lastMsg, ArrayList messageBuffer, int SIZE  ) { //A
+ int np = 0; //A
+ if ((msgCounter > 0) && (nToPrint > 0)) { //A
+ for (int j = lastMsg; (( j != 0) && (np < nToPrint)); --j) { //B
+ System.out.println(messageBuffer.get(j)); //C
+ ++np; //D
+ } //E
+ if (np < nToPrint) { //F
+ for (int j = SIZE; ((j != 0) && (np < nToPrint)); --j) { //G
+ System.out.println(messageBuffer.get(j)); //H
+ ++np; //I
+ } //J
+ } //K
+ } //L
+ return np;
+}
  public Student(){
      
  }

@@ -11,16 +11,19 @@
 public class BinarySearch {
   
   /** Use binary search to find the key in the list */
+    int low;
+    int high;
+    int mid;
   public int binarySearch(int[] list, int key) {
-    int low = 0;
-    int high = list.length - 1;
+    low = 0;
+    high = list.length - 1;
     //  A
     System.out.println("I am in A");
     while (high >= low) {
         // B
       System.out.println("I am in B");
         // list.length - 1 >= low
-      int mid = (low + high) / 2;
+      mid = (low + high) / 2;
       if (key < list[mid]){
           // C
        System.out.println("I am in C");

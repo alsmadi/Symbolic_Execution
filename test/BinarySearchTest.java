@@ -40,15 +40,19 @@ public class BinarySearchTest {
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
-/*     @Test
+    @Test
      public void test1() {
          int[] abc = new int[0];
          assertEquals(bs.binarySearch(abc, 4),-1); // Path 1
-     } */
+         assertTrue(bs.low>bs.high);
+          assertTrue(bs.low<=bs.mid);
+     } 
      
      @Test
      public void test2() {
          int[] abc = {1,3,4,5,7};
          assertEquals(bs.binarySearch(abc, 3),1); // Path 1
+         assertFalse(bs.low>bs.high);
+         assertTrue(bs.low<=bs.mid);
      }
 }

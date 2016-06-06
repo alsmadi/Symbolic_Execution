@@ -44,13 +44,17 @@ public class Example1_Test {
     //
     @Test
      public void test1(){
+         
+         for(int k=0; k<20000; k++){
+             System.out.println("counter "+k);
      int g1= Example1.randomRange(-1000,1000);
          int g2= Example1.randomRange(-1000,1000);
           int g3= Example1.randomRange(-1000,1000);
      assertThat (Example1.test(g3, g3, g3), 
-             anyOf(equalTo(13), equalTo(3), equalTo(15), equalTo(400)));
+             anyOf(equalTo(29), equalTo(-9), equalTo(16), equalTo(400)));
+         }
      }
-     
+     /*
      @Test
      public void test2(){
      int g1= Example1.randomRange(-1000,1000);
@@ -58,5 +62,5 @@ public class Example1_Test {
           int g3= Example1.randomRange(-1000,1000);
      assertThat (Example1.test(g3, g3, g3), 
              anyOf(equalTo(13), equalTo(3), equalTo(15), equalTo(400)));
-     }
+     } */
 }

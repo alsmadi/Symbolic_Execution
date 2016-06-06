@@ -62,7 +62,7 @@ public class Test1 {
       Student st1 = new Student("alsmadi","B+","G"); 
     
      assertTrue(st==st);
-   //  assertTrue(st==st1);
+     //assertTrue(st==st1);
      }
      
      @Test
@@ -84,6 +84,7 @@ public class Test1 {
      public void test4(){
          Student st = new Student();
           int g1= Example.randomRange(-1000,1000);
+          System.out.println("The value of g1 is..."+ g1);
          int result = st.Compute(g1);
  assertTrue(result >= 0); 
      }

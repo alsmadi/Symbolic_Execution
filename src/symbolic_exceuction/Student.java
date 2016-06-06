@@ -23,9 +23,9 @@ public class Student implements Comparable<Student>{
  System.out.println("A");
  System.out.println("Values of inputs respectively");
  System.out.println(nToPrint+".."+msgCounter+".."+lastMsg+".."+messageBuffer.size()+".."+SIZE);
- if ((msgCounter > 0) && (nToPrint > 0)) { //A
- //System.out.println("B");
- for (int j = lastMsg; (( j != 0) && (np < nToPrint)); --j) { //B
+ if ((msgCounter > 0) && (nToPrint > 0)) { 
+ System.out.println("B");
+ for (int j = lastMsg; (( j != 0) && (np < nToPrint)); --j) { 
  System.out.println("B");
  System.out.println("Values of inputs respectively");
  System.out.println(nToPrint+".."+msgCounter+".."+lastMsg+".."+messageBuffer.size()+".."+SIZE);

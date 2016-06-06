@@ -40,7 +40,7 @@ public class Example_Test {
     @After
     public void tearDown() {
     }
-    
+/*    
     @Test
      public void test1(){
      java.util.ArrayList a = new java.util.ArrayList();
@@ -78,7 +78,7 @@ public class Example_Test {
            
       }  
        
-   }
+   } */
     @Test
       public void test5(){
           
